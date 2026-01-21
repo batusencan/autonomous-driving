@@ -1,2 +1,6 @@
-# autonomous-driving
-Autonomus driving experiments using Python , OpenCV and CARLA Simulator
+# Autonomous Driving Project
+This repository contains my autonomous driving project.
+# Techs I will use
+Python
+OpenCV
+CARLA Simulator
