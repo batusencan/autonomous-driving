@@ -8,7 +8,7 @@ This repository contains computer vision applications for autonomous driving, st
 
 * **image_lane_detection:** Detects lane lines from a static highway image using Canny Edge Detection and Hough Transform.
 * **lane_detection_system_prototype:** Real-time lane tracking application on dynamic video streams using Line Averaging (Single Line Theorem).
-![Autonomous Lane Detection In Action](lane_detection_test.gif)
+![Autonomous Lane Detection In Action](lane_detection_gif.gif)
 ---
 
 ## 🛠️ Tech Stack & Dependencies
