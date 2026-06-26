@@ -11,7 +11,9 @@ Instead of patching the old monolithic script, I created a brand new architectur
 - **Zero-Spaghetti Code:** Built a fully functional pipeline (`process_frame()`) for better memory management and scalability.
 - **Goodbye Polyfit:** Completely abandoned the global linear regression (`np.polyfit`) model. Forcing the right solid lane and the center dashed lanes into a single line equation was mathematically incorrect, causing artificial "X" noise.
 - **Direct Vector Tracking:** The new codebase now directly visualizes the raw `HoughLinesP` vectors strictly filtered inside a precisely tuned Region of Interest (ROI). This allows dashed lanes to appear naturally without distorting the tracking path.
-
+| Previous Version (Monolithic & High Noise) | Current Version (Functional & Clean ROI) |
+|--------------------------------------------|------------------------------------------|
+| ![v1](lane_detection_gif.gif)                   | ![v2](lane_detection2.gif)                 |
 
 ## 📂 Project Structure
 
