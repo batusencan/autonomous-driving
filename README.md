@@ -3,12 +3,21 @@
 This repository contains computer vision applications for autonomous driving, starting from basic lane detection algorithms to simulator integrations.
 
 ---
+### 🚀 Structural Evolution: Complete Codebase Refactoring (v2.0)
+
+Instead of patching the old monolithic script, I created a brand new architecture in a separate folder to implement clean, modular, and functional programming principles from scratch.
+
+#### Key Architectural Changes:
+- **Zero-Spaghetti Code:** Built a fully functional pipeline (`process_frame()`) for better memory management and scalability.
+- **Goodbye Polyfit:** Completely abandoned the global linear regression (`np.polyfit`) model. Forcing the right solid lane and the center dashed lanes into a single line equation was mathematically incorrect, causing artificial "X" noise.
+- **Direct Vector Tracking:** The new codebase now directly visualizes the raw `HoughLinesP` vectors strictly filtered inside a precisely tuned Region of Interest (ROI). This allows dashed lanes to appear naturally without distorting the tracking path.
+
 
 ## 📂 Project Structure
 
 * **image_lane_detection:** Detects lane lines from a static highway image using Canny Edge Detection and Hough Transform.
 * **lane_detection_system_prototype:** Real-time lane tracking application on dynamic video streams using Line Averaging (Single Line Theorem).
-![Autonomous Lane Detection In Action](lane_detection_gif.gif)
+
 ---
 
 ## 🛠️ Tech Stack & Dependencies
